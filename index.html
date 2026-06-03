@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>熊大熊二宇宙</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero">
+        <div class="forest"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">BEAR MEME TERMINAL</p>
+          <h1>熊大熊二宇宙</h1>
+          <p id="quote">熊就要有个熊样</p>
+        </div>
+
+        <div class="stage" id="stage">
+          <div class="spotlight"></div>
+          <figure class="main-card" id="mainCard">
+            <img id="mainMeme" alt="熊大熊二表情包">
+            <figcaption id="mainCaption">正在加载熊味</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="console">
+        <button class="action primary" id="randomBtn" type="button" aria-label="随机发疯" title="随机发疯">
+          <span aria-hidden="true">?</span>
+        </button>
+        <button class="action" id="duelBtn" type="button" aria-label="兄弟审判" title="兄弟审判">
+          <span aria-hidden="true">⚡</span>
+        </button>
+        <button class="action" id="rainBtn" type="button" aria-label="表情包雨" title="表情包雨">
+          <span aria-hidden="true">▾</span>
+        </button>
+        <button class="action" id="panicBtn" type="button" aria-label="光头强预警" title="光头强预警">
+          <span aria-hidden="true">!</span>
+        </button>
+        <div class="meter">
+          <span>熊味指数</span>
+          <strong id="bearScore">88%</strong>
+        </div>
+      </section>
+
+      <section class="duel" id="duelPanel" hidden>
+        <figure>
+          <img id="leftMeme" alt="熊二">
+          <figcaption>熊二</figcaption>
+        </figure>
+        <div class="verdict" id="verdict">本局由森林裁判席判定</div>
+        <figure>
+          <img id="rightMeme" alt="熊大">
+          <figcaption>熊大</figcaption>
+        </figure>
+      </section>
+
+      <section class="gallery" id="gallery" aria-label="表情包画廊"></section>
+    </main>
+
+    <div class="toast" id="toast" hidden>熊出没注意</div>
+
+    <script src="manifest.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
